@@ -7,7 +7,7 @@ export default reducers => {
       key: 'frontFoco',
       storage,
       // na whitelist coloco os reducers que eu quero que persista algma informação
-      whitelist: ['auth', 'user'],
+      whitelist: ['auth', 'user', 'turma'],
     },
     reducers
   );

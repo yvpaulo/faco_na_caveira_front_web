@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { lighten } from 'polished';
 
 export const Container = styled.aside`
   background: #202225;
@@ -31,5 +32,15 @@ export const Turma = styled.button`
 
   &:hover img {
     border-radius: 30%;
+  }
+
+  p {
+    font-size: 12px;
+    border: 0;
+    background: none;
+    color: ${lighten(0.1, '#ff892e')};
+    padding: 0 5px;
+    margin: 0 5px;
+    border-left: 1px solid rgba(255, 255, 255, 01);
   }
 `;

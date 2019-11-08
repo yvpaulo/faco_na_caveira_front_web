@@ -36,7 +36,7 @@ export const NotificationList = styled.div`
   background-color: hsla(254, 46%, 60%, 0.5);
   border-radius: 4px;
   padding: 15px 5px;
-  /** essa propriedade é para esconder ou aparecer as notificações */
+  /** essa propriedade é para esconder ou aparecer as notificações se foi lida ou não */
   display: ${props => (props.visible ? 'block' : 'none')};
 
   /* Faz o triangulo da notificação */
@@ -73,8 +73,10 @@ export const Notification = styled.div`
   }
 
   time {
+    display: block;
     font-size: 12px;
     opacity: 0.6;
+    margin-bottom: 5px;
   }
 
   button {
